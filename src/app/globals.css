@@ -35,6 +35,25 @@ a {
   text-decoration: none;
 }
 
+.login-form, .form {
+  display: grid;
+  gap: 8px;
+  max-width: 640px;
+}
+
+label { display: flex; flex-direction: column; gap: 6px; }
+input, textarea, select { padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
+button { padding: 8px 12px; cursor: pointer; }
+.button { padding: 6px 10px; border-radius: 6px; background: #efefef; }
+.application-item { border: 1px solid #eee; padding: 12px; border-radius: 6px; margin: 8px 0; }
+.row { display: flex; justify-content: space-between; }
+.small { color: #777; font-size: 0.9em; }
+.status { margin-top: 8px; font-weight: 600; }
+.error { margin-top: 8px; color: #c00; }
+.meta h3 { margin: 0; }
+.notes { margin-top: 8px; color: #333; }
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
